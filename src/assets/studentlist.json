@@ -1,0 +1,39 @@
+[
+    {
+        "nameSurname":"Ayca Ekin Begen",
+        "no":"0100100",
+        "gender":"female",
+        "birthDate":"01.01.1987",
+        "mail":"aycabegen@gmail.com"
+    },
+    {
+        "nameSurname":"Emre Ubeyli",
+        "no":"0100101",
+        "gender":"male",
+        "birthDate":"01.01.1993",
+        "mail":"askoyleolmazguzelim@gmail.com"
+    },
+
+    {
+        "nameSurname":"Serhan Celiker",
+        "no":"0100102",
+        "gender":"male",
+        "birthDate":"01.01.1992",
+        "mail":"serikoz@gmail.com"
+
+
+    },
+    {
+        "nameSurname":"Melis Betyakan",
+        "no":"0100103",
+        "gender":"female",
+        "birthDate":"01.01.1992",
+        "mail":"monelogyapma@gmail.com"
+
+
+    }
+
+
+
+
+]

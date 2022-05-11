@@ -1,0 +1,40 @@
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        margin: 50px 50px 75px 400px;
+    }
+</style>
+
+<div>
+    <table style="width:50%">
+        <tr>
+            <th>Class Code</th>
+            <th>Lecturer</th>
+            <th>Faculty</th>
+            <th>Capacity</th>
+        </tr>
+
+        <tr style="width:50%" *ngFor="let sinif of sinifList">
+            <td style="width: 50%;">{{sinif.code}}    
+                </td>
+            
+            <td style="width:50%">{{sinif.lecturer.nameSurname}}</td>
+            <td style="width:50%">{{sinif.lecturer.faculty}}</td>
+            <td style="width:50%">{{sinif.capacity}}</td>
+
+
+
+
+
+        </tr>
+
+    </table>
+</div>
+
+
+<button (click)="ekle()">Ekle</button>
+
+<app-add-class (kapat)="kapat()" *ngIf="yeni"></app-add-class>
+

@@ -1,0 +1,4 @@
+<app-list [columnNames]="kolonNames" [dataList]="ogrenciList" (rowClick)="onRowClick($event)"></app-list>
+<button (click)="ekle()">Ekle</button>
+
+<app-addogrenci *ngIf="yeni" (kapat)="kapat()"></app-addogrenci>

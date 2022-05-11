@@ -1,0 +1,29 @@
+
+
+<h2>Student Detail</h2>
+
+<div>
+    <table style="width:50%">
+        <tr>
+            <th>Name & Surname</th>
+            <th>Number</th>
+            <th>Gender</th>
+            <th>Birth Date</th>
+            <th>Mail</th>
+        </tr>
+
+
+
+        <tr style="width: 50%;" *ngIf="student">
+            <td  style="width:50%">{{student.nameSurname}}</td>
+            <td  style="width:50%">{{student.no}}</td>
+            <td  style="width:50%">{{student.gender}}</td>
+            <td  style="width:50%">{{student.birthDate}}</td>
+            <td  style="width:50%">{{student.mail}}</td>
+
+        </tr>
+    </table>
+</div>
+
+
+

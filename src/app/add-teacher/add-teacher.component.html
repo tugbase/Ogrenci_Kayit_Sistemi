@@ -1,0 +1,25 @@
+
+<form [formGroup]="ogretmenForm">
+
+
+<div>
+    <mat-form-field class="example-width" appearance="fill">
+        <mat-label >Name and Surname </mat-label>
+        <input matInput type="text" formControlName="nameSurname" /><br>
+    </mat-form-field>
+    <div *ngIf="nameSurname.invalid && (nameSurname.touched || nameSurname.dirty)"> Bu alan zorunludur</div>
+    <br>
+    <mat-form-field class="example-width" appearance="fill">
+        <mat-label >Faculty</mat-label>
+        <input matInput type="text" formControlName="faculty" /><br>
+    </mat-form-field>
+    <br>
+    <button mat-raised-button [disabled]="ogretmenForm.invalid" (click)="occur()" >Submit</button>
+    
+</div>
+<div>
+    <br>
+
+</div>
+
+</form>

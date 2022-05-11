@@ -1,0 +1,55 @@
+<div>
+    <form [formGroup]="ogrenciForm">
+
+        <mat-form-field class="example-width" appearance="fill">
+            <mat-label>Name and Surname </mat-label>
+            <input matInput type="text" formControlName="nameSurname" required />
+
+
+            <br>
+        </mat-form-field>
+        <div *ngIf="nameSurname.invalid && (nameSurname.touched || nameSurname.dirty)">
+            Bu alan zorunludur.
+        </div>
+        <br>
+        <mat-form-field class="example-width" appearance="fill">
+            <mat-label>Student No</mat-label>
+            <input matInput type="text" formControlName="no" /><br>
+        </mat-form-field>
+        <div *ngIf="no.invalid && (no.touched || no.dirty)">
+            Bu alan zorunludur.
+        </div>
+        <br>
+
+        <mat-form-field class="example-width" appearance="fill">
+            <mat-label>Gender</mat-label>
+            <mat-select formControlName="gender">
+                <mat-option value="Female"> Female </mat-option>
+                <mat-option value="Male"> Male </mat-option>
+
+            </mat-select>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="example-width" appearance="fill">
+            <mat-label>Birth Date</mat-label>
+            <input matInput type="date" formControlName="birthDate" /><br>
+        </mat-form-field>
+        <br>
+        <br>
+        <mat-form-field class="example-width" appearance="fill">
+            <mat-label>Mail</mat-label>
+            <input matInput type="email" formControlName="mail" /><br>
+        </mat-form-field>
+        <div *ngIf="mail.invalid && (mail.touched || mail.dirty)">
+            Bu alan zorunludur.
+        </div>
+
+    </form>
+    <br>
+    <button mat-raised-button [disabled]="!ogrenciForm.valid" (click)="olustur()">Submit</button>
+
+</div>
+<div>
+    <br>
+
+</div>

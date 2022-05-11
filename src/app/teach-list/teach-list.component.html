@@ -1,0 +1,5 @@
+<app-list [columnNames]="kolonlar" [dataList]="ogretmenList"></app-list>
+<button (click)="ekle()">Ekle</button>
+
+<app-add-teacher (kapat)="kapat()" *ngIf="yeni"></app-add-teacher>
+
