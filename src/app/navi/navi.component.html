@@ -1,5 +1,34 @@
+<div>
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav class="side" mode="side" opened><br>
+      <div class="link">
+      <a [routerLink]="['']">HOME</a><br>
+    </div>
+    <div class="link">
+      <a [routerLink]="['/list']">STUDENT LIST</a><br>
+    </div>
+    <div class="link">
+      <a [routerLink]="['/teachList']">TEACHER LIST</a><br>
+    </div>
+    <div class="link">
+      <a [routerLink]="['/lectureList']">LECTURE LIST</a><br>
+    </div>
+      
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
 
-<a [routerLink]="['']" >
+
+  </mat-sidenav-container>
+
+</div>
+
+
+
+
+
+<!-- <a [routerLink]="['']" >
     <h1>HOME</h1>
 </a>
 
@@ -26,7 +55,4 @@
   <a [routerLink]="['/lectureList']">
   
     <h1>LECTURE LIST</h1>
-  </a>
-
-
-  
+  </a> -->

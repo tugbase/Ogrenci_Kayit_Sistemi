@@ -23,7 +23,7 @@ import { SinifListComponent } from './sinif-list/sinif-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { NumericDirective } from './numeric.directive';
-
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -51,6 +51,7 @@ import { NumericDirective } from './numeric.directive';
     ReactiveFormsModule,
     HttpClientModule,
     CommonModule,
+    MatSidenavModule,
     RouterModule.forRoot([
       { path: '', component: MainpageComponent},
       
