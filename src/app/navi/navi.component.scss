@@ -1,0 +1,28 @@
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+    
+  }
+
+  .link {
+    padding: 10px;
+   
+    margin: 10px;
+  
+ 
+    background-color: beige;
+
+    a {
+        color: green;
+        font-size: large;
+        font-weight: 500;
+    }
+  }
+
+  .side{
+      background-color: beige;
+  }
