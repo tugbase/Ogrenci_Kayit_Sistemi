@@ -1,7 +1,10 @@
 import { EmailValidator } from "@angular/forms";
+import {Course} from "./Ders";
+
 
 export class Ogrenci {
-    constructor(public nameSurname: string, public no: string, public gender: string, public birthDate:Date, public mail:string){}
+    public classList:Course[]=[];
+    constructor(public nameSurname: string, public no: string, public gender: string, public birthDate:Date, public mail:string ){}
 }
 
 

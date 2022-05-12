@@ -24,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { NumericDirective } from './numeric.directive';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { ClassComponent } from './class/class.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     AddClassComponent,
     SinifListComponent,
     ListComponent,
-    NumericDirective
+    NumericDirective,
+    ClassComponent
   ],
   imports: [
     BrowserModule,
@@ -60,9 +62,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
       {path:'addTeacher', component:AddTeacherComponent},
       {path:'teachList', component:TeachListComponent},
       {path:'addLecture', component:AddClassComponent},
-      {path:'lectureList', component:SinifListComponent},
-
-
+      {path:'lectureList', component:ClassComponent},
     ])
   ],
   providers: [],

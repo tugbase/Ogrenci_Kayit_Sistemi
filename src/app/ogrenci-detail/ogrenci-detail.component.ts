@@ -17,7 +17,8 @@ export class OgrenciDetailComponent implements OnInit {
     no: '',
     gender: '',
     birthDate: new Date(),
-    mail: ''
+    mail: '',
+    classList:[]
   }
 
   constructor(private route:ActivatedRoute, private ogrenciServis: OgrenciListService) {
